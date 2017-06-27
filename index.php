@@ -16,7 +16,7 @@
 	$pathArr = explode("/", substr($path, 1));
 	// 默认值
 	$directory = "dashboard";
-	$fileName = "index";
+	$fileName = "index";	
 
 	//用户即传进来了目录名也传了文件名
 	if(count($pathArr) == 2){
