@@ -1,4 +1,4 @@
-define(["jquery","cookie","template"],function($){
+define(["jquery","template","cookie"],function($,template){
 	// 侧边栏 头部模板渲染
 	// 判断 login 页面的时候不用加载模板
 	if(location.pathname != "/dashboard/login"){
