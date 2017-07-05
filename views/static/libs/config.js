@@ -7,13 +7,35 @@ require.config({
 		"template" : "assets/artTemplate/template",
 		"nprogress" : "assets/nprogress/nprogress",
 		"bootstrap" : "assets/bootstrap/js/bootstrap.min",
-		"util": "static/js/util"
+		"util": "static/js/util",
+		"datepicker" : "assets/bootstrap-datepicker/js/bootstrap-datepicker.min",
+		"datepicker-zh" : "assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
+		"validate": "assets/jquery-validate/jquery-validate.min",
+		"ckeditor": "assets/ckeditor/ckeditor",
+        "region": "assets/jquery-region/jquery.region",
+        "uploadify": "assets/uploadify/jquery.uploadify",
+        "jcrop": "assets/Jcrop/js/Jcrop"
 
 	},
 	shim : {
 		"bootstrap" : {
 			deps : ["jquery"]
-		}
+		},
+		"datepicker-zh" : {
+			deps : ["datepicker"]
+		},
+		"validate" : {
+			deps : ["jquery"]
+		},
+		"ckeditor": {
+            exports: "CKEDITOR"
+      	},
+      	"uploadify": {
+            deps: ["jquery"]
+        },
+        "jcrop": {
+            deps: ["jquery"]
+      }
 	}
 	
 });
